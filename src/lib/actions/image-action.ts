@@ -25,7 +25,7 @@ export const generateImage = async (prompt: string) => {
   if (!user) {
     return { success: false, error: "invalid credentials" };
   }
-  if (!prompt || prompt.length < 8) {
+  if (!prompt || prompt.length < 2) {
     return { success: false, error: "invalid prompt" };
   }
   if (user.creditBalance <= 0) {

@@ -82,7 +82,7 @@ const signUp = async (userData: UserSchema) => {
       httpOnly: true,
       secure: process.env.NODE_ENV === "production",
       sameSite: "strict",
-      maxAge: 60 * 60 * 12, // 12 hours
+      maxAge: 60 * 60 * 12 * 1000, // 12 hours
       path: "/",
     });
 
